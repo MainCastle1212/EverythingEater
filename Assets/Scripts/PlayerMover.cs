@@ -26,7 +26,6 @@ public class PlayerMover : MonoBehaviour
         v = Input.GetAxis("Ver");
 
         var inputVector = new Vector2(h, v);
-        //var dir = inputVector.normalized;
 
         rd.velocity = inputVector * Speed;
         Vector2 diff = (Trans.position - playerPos).normalized;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
-public class EatableObjContoroller : MonoBehaviour //,IEatable
+public class EatableObjContoroller : MonoBehaviour, IEatable
 {
     [SerializeField]
     private SpriteRenderer Player;
@@ -15,8 +15,10 @@ public class EatableObjContoroller : MonoBehaviour //,IEatable
     {
         Renderer = GetComponent<SpriteRenderer>();
         ObjSize = Renderer.bounds.size.x * Renderer.bounds.size.y;
-        Debug.Log(ObjSize);
     }
+    /// <summary>
+    /// 食べられたときプレイヤーを大きくする処理を行う。
+    /// </summary>
     public void Eaten()
     {
         if (!IsEatable()) return;
@@ -28,7 +30,11 @@ public class EatableObjContoroller : MonoBehaviour //,IEatable
 
         Destroy(gameObject);
     }
-    private bool IsEatable()
+    /// <summary>
+    /// 食べられるかどうかの判定を行う。
+    /// </summary>
+    /// <returns></returns>
+    public bool IsEatable()
     {
         PlayerSize = Player.bounds.size.x * Player.bounds.size.y;
         if (PlayerSize >= ObjSize)

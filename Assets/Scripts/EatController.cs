@@ -4,13 +4,7 @@ using UnityEngine;
 
 public class EatController : MonoBehaviour
 {
-    private Vector3 PlayerSize;
-    void Start()
-    {
-        PlayerSize = transform.localScale;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         var eatObj = collision.gameObject;
         Debug.Log(eatObj.name);
