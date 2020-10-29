@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UI_Manager : MonoBehaviour
+public class UI_TimeManager : MonoBehaviour
 {
     [SerializeField]
     private Timer Timer;

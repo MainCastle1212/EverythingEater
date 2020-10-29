@@ -27,7 +27,6 @@ public class Timer : ScriptableObject
             return;
         }
         Time -= UnityEngine.Time.deltaTime;
-        Debug.Log(Time);
     }
     /// <summary>
     /// 初期値に戻す処理
