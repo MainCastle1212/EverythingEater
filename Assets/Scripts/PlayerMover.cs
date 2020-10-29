@@ -27,12 +27,12 @@ public class PlayerMover : MonoBehaviour
 
         var inputVector = new Vector2(h, v);
 
-        rd.velocity = inputVector * Speed;
+        rd.velocity = inputVector.normalized * Speed;
+
         Vector2 diff = Trans.position - playerPos;
+
         if (diff.magnitude > 0.05f)
         {
-            Debug.Log(diff.magnitude);
-
             Trans.rotation = Quaternion.FromToRotation(Vector3.right, diff);
         }
         playerPos = Trans.position;
