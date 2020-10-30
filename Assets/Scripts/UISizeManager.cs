@@ -14,6 +14,9 @@ public class UISizeManager : MonoBehaviour
     [SerializeField]
     private Text Size;
     [SerializeField]
+    private Text GoalSizeT;
+    //TODO ゲームマネージャーとかディレクター側で設定するように変更
+    [SerializeField]
     private float GoalSize = 30;
 
     private float PlayerScale;
@@ -23,8 +26,9 @@ public class UISizeManager : MonoBehaviour
     private void Awake()
     {
         PlayerScale = Player.localScale.x;
+        GoalSizeT.text = $"{GoalSize}㍍";
 
-        Ratio = (TargetUI.rect.width - PlayerUI.rect.width) / GoalSize;
+        Ratio = (TargetUI.rect.width - PlayerUI.rect.width) / (GoalSize - PlayerScale);
     }
     private void Update()
     {
@@ -33,12 +37,10 @@ public class UISizeManager : MonoBehaviour
         var diff = Player.localScale.x - BaffaPlayerSize;
         PlayerUI.sizeDelta += new Vector2(Ratio * diff, Ratio * diff);
 
-        Debug.Log(diff);
+        PlayerScale = Player.localScale.x;
 
         var sizeAfterDecimal = GetAfterDecimalPoint(PlayerScale) * 10;
-        Size.text = $"{PlayerScale}㍍{sizeAfterDecimal:0}㌢";
-
-        PlayerScale = Player.localScale.x;
+        Size.text = $"{Mathf.FloorToInt(PlayerScale)}㍍{sizeAfterDecimal:0}㌢";
     }
     /// <summary>
     /// 小数点以下を返すメソッド

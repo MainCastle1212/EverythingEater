@@ -257,7 +257,8 @@ MonoBehaviour:
   PlayerUI: {fileID: 1939377865}
   TargetUI: {fileID: 341249067}
   Size: {fileID: 165660440}
-  GoalSize: 30
+  GoalSizeT: {fileID: 913388689}
+  GoalSize: 2
 --- !u!1 &165660438
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,8 +293,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -45}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 61.988586, y: 30}
+  m_AnchoredPosition: {x: 3.12, y: 3.12}
+  m_SizeDelta: {x: 121.70801, y: 41.040237}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &165660440
 MonoBehaviour:
@@ -327,7 +328,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "1\u334D00\u3322"
+  m_Text: "10\u334D 0\u3322"
 --- !u!222 &165660441
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -582,8 +583,8 @@ RectTransform:
   m_Children:
   - {fileID: 716664691}
   - {fileID: 244483270}
-  - {fileID: 1607053224}
   - {fileID: 1003577161}
+  - {fileID: 1607053224}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1466,7 +1467,7 @@ GameObject:
   - component: {fileID: 913388690}
   - component: {fileID: 913388689}
   m_Layer: 5
-  m_Name: MokuhyouSize
+  m_Name: MokuhyouText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1647,7 +1648,7 @@ RectTransform:
   m_Children:
   - {fileID: 1939377865}
   m_Father: {fileID: 203870523}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2413,7 +2414,7 @@ RectTransform:
   - {fileID: 24682201}
   - {fileID: 913388688}
   m_Father: {fileID: 203870523}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

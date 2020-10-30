@@ -5,6 +5,8 @@ using UnityEngine;
 public class EatableObjContoroller : MonoBehaviour, IEatable
 {
     [SerializeField]
+    private EatableObjSO m_SO;
+    [SerializeField]
     private SpriteRenderer Player;
     [SerializeField]
     private float Ratio = 10;
