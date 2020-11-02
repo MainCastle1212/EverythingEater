@@ -12,14 +12,14 @@ public class EatableObjContoroller : MonoBehaviour, IEatable
     private float Ratio = 10;
 
     private float PlayerSize;
-    private SpriteRenderer Renderer;
+    private Renderer m_Renderer;
     private float ObjSize;
     void Start()
     {
-        Renderer = GetComponent<SpriteRenderer>();
+        m_Renderer = GetComponent<Renderer>();
 
-        ObjSize = Renderer.bounds.size.x * Renderer.bounds.size.y;
-        Debug.Log(ObjSize);
+        ObjSize = m_Renderer.bounds.size.x * m_Renderer.bounds.size.y;
+        Debug.Log($"{gameObject.name}: {ObjSize}");
     }
     /// <summary>
     /// 食べられたときプレイヤーを大きくする処理を行う。

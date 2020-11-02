@@ -260,6 +260,7 @@ MonoBehaviour:
   Size: {fileID: 165660440}
   GoalSizeT: {fileID: 913388689}
   GoalSize: 2
+  MaxSize: 462
 --- !u!224 &130281018
 RectTransform:
   m_ObjectHideFlags: 0
@@ -443,7 +444,7 @@ GameObject:
   - component: {fileID: 174883491}
   - component: {fileID: 174883490}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: Fillimage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -481,7 +482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.24528301, g: 0.23949803, b: 0.23949803, a: 1}
+  m_Color: {r: 1, g: 0.3389593, b: 0.3254717, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -675,11 +676,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 716664691}
-  - {fileID: 244483270}
+  - {fileID: 1450962195}
   - {fileID: 1003577161}
   - {fileID: 1607053224}
-  - {fileID: 1450962195}
+  - {fileID: 716664691}
+  - {fileID: 244483270}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -705,7 +706,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &244483270
 RectTransform:
   m_ObjectHideFlags: 0
@@ -718,12 +719,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 203870523}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 66.462, y: -45.963}
-  m_SizeDelta: {x: 97.24843, y: 58.726654}
+  m_AnchoredPosition: {x: 65, y: -65}
+  m_SizeDelta: {x: 66.99624, y: 58.055244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &244483271
 MonoBehaviour:
@@ -738,7 +739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1333,11 +1334,11 @@ RectTransform:
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 203870523}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 66.461975, y: -45.962997}
+  m_AnchoredPosition: {x: 65, y: -65}
   m_SizeDelta: {x: 56.924683, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &716664692
@@ -1431,7 +1432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.7444172, b: 0.43867922, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1817,7 +1818,7 @@ RectTransform:
   m_Children:
   - {fileID: 1939377865}
   m_Father: {fileID: 203870523}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2472,7 +2473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1450962195}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: TimerClock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2492,11 +2493,11 @@ RectTransform:
   - {fileID: 729439977}
   - {fileID: 174883489}
   m_Father: {fileID: 203870523}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 65, y: -148}
+  m_AnchoredPosition: {x: 65, y: -65}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1535927258
@@ -2620,7 +2621,7 @@ RectTransform:
   - {fileID: 24682201}
   - {fileID: 913388688}
   m_Father: {fileID: 203870523}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
