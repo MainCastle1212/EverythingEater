@@ -4,8 +4,11 @@
 public class Timer : ScriptableObject
 {
     [SerializeField]
-    private int StartTime;
+    public int StartTime;
     public float Time { get; private set; }
+    /// <summary>
+    /// Timeが0以下かの判定を行う
+    /// </summary>
     public bool IsTimeOver => Time <= 0;
 
     /// <summary>
