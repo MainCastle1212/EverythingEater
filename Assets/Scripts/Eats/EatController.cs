@@ -6,11 +6,11 @@ public class EatController : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // if (!collision.gameObject.CompareTag("Eatable")) return;
+        //if (!collision.gameObject.CompareTag("Eatable")) return;
 
         var eatObj = collision.gameObject.GetComponent<EatableObjContoroller>();
         if (eatObj == null) return;
-        Debug.Log("Eaten " + eatObj.name);
+
         eatObj.Eaten();
     }
 }
