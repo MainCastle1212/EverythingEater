@@ -8,8 +8,6 @@ public class DivideController : MonoBehaviour
     float DividableSize = 1;
     [SerializeField]
     float InjectionPower = 10;
-    //[SerializeField]
-    //GameObject PlayerPrefab;
 
     //TODO スケールでプレイヤーのサイズを扱うのかRendererのBoundsで扱うのかをしっかり決める
     // private SpriteRenderer m_Renderer;
@@ -42,7 +40,7 @@ public class DivideController : MonoBehaviour
     {
         //var nowSize = m_Renderer.bounds.size.x * m_Renderer.bounds.size.y;
         var nowSize = m_Trans.localScale.x * m_Trans.localScale.y;
-        Debug.Log(nowSize);
+
         if (nowSize < DividableSize) return;
 
         var halfSide = HalfAreaSide(nowSize);
@@ -53,7 +51,7 @@ public class DivideController : MonoBehaviour
 
         gameObject.transform.localScale = halfScale;
 
-        player.tag = "Player";
+        // player.tag = "Player";
         player.transform.localScale = halfScale;
         player.GetComponent<Rigidbody2D>().AddForce(Vector2.right * InjectionPower);
     }
