@@ -10,6 +10,8 @@ public class GameDirector : MonoBehaviour
     [SerializeField]
     Timer timer;
     [SerializeField]
+    EatableObjSO PlayerSO;
+    [SerializeField]
     GameObject FinishUI;
     [SerializeField]
     float time;
@@ -22,22 +24,26 @@ public class GameDirector : MonoBehaviour
     {
         FinishUI.SetActive(false);
     }
+    private void Update()
+    {
+        PlayerSO.Size = Player.BiggestSize;
+        Debug.Log(PlayerSO.Size);
+    }
     public void OnGameOver()
     {
         FinishUI.SetActive(true);
 
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
         var finishUITrans = FinishUI.transform;
         var transCashe = finishUITrans.localScale;
 
         finishUITrans.localScale = Vector3.zero;
 
         finishUITrans.DOScale(transCashe, time).SetEase(ease)
-                                          .SetUpdate(true);
-
-        DOVirtual.DelayedCall(time + 1, () =>
-          {
-              SceneManager.LoadScene("GameOverScene");
-          });
+                                          .SetUpdate(true)
+                                          .OnComplete(() =>
+                                          {
+                                              FadeManager.Instance.LoadScene("GameOverScene", time);
+                                          });
     }
 }

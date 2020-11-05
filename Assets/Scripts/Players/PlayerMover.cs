@@ -7,6 +7,8 @@ public class PlayerMover : MonoBehaviour
 {
     [SerializeField]
     private float Speed = 1;
+    [SerializeField]
+    Timer timer;
 
     private Transform Trans;
     private Rigidbody2D rd;
@@ -22,6 +24,8 @@ public class PlayerMover : MonoBehaviour
     }
     void Update()
     {
+        if (timer.IsTimeOver) return;
+
         h = Input.GetAxis("Hori");
         v = Input.GetAxis("Ver");
 

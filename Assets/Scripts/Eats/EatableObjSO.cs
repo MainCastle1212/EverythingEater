@@ -12,5 +12,15 @@ public class EatableObjSO : ScriptableObject
     /// 自身のスプライト
     /// </summary>
     public Sprite m_Sprite;
+    public float InitSize;
+    public float Size { get; set; }
 
+    private void OnEnable()
+    {
+        Init();
+    }
+    public void Init()
+    {
+        Size = InitSize;
+    }
 }
