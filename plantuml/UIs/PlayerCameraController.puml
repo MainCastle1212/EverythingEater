@@ -1,0 +1,8 @@
+@startuml
+class PlayerCameraController {
+    - Awake() : void
+    - OnDestroy() : void
+}
+MonoBehaviour <|-- PlayerCameraController
+PlayerCameraController --> "vCam" VCamFollow
+@enduml

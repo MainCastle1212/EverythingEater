@@ -1,0 +1,14 @@
+@startuml
+class Eat {
+    Ratio : float
+    Time : float
+    - m_Size : float <<get>>
+    Start() : void
+    - OnCollisionEnter2D(collision:Collision2D) : void
+    + TryEat(collision:Collision2D) : void
+}
+MonoBehaviour <|-- Eat
+Eat --> "ease" Ease
+Eat --> "m_Trans" Transform
+Eat --> "m_Sprite" SpriteRenderer
+@enduml

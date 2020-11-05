@@ -16,18 +16,18 @@ public class UISizeManager : MonoBehaviour
     private Text Size;
     [SerializeField]
     private Text GoalSizeT;
-    //TODO ゲームマネージャーとかディレクター側で設定するように変更
-    [SerializeField]
-    private float GoalSize = 30;
     [SerializeField]
     private float MaxSize = 462;
+    [SerializeField]
+    private GameDirector gameDirector;
 
     private float PlayerScale;
     private float BaffaPlayerSize;
-
+    private float GoalSize;
     private float Ratio;
     private void Awake()
     {
+        GoalSize = gameDirector.GoalSize;
         PlayerScale = Player.BiggestPlayer.localScale.x;
         GoalSizeT.text = $"{GoalSize}㍍";
 

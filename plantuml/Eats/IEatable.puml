@@ -1,6 +1,5 @@
 @startuml
 interface IEatable {
-    IsEatable() : bool
-    Eaten() : void
+    ObjSize : float <<get>>
 }
 @enduml

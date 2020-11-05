@@ -2,15 +2,20 @@
 !include .\\CollisionDetector.puml
 !include .\\Timer.puml
 !include .\\TimerEvent.puml
+!include .\\Eats\Eat.puml
 !include .\\Eats\EatableObjContoroller.puml
 !include .\\Eats\EatableObjSO.puml
 !include .\\Eats\EatController.puml
 !include .\\Eats\IEatable.puml
 !include .\\Players\AbsorbController.puml
 !include .\\Players\DivideController.puml
+!include .\\Players\Player.puml
 !include .\\Players\PlayerCollisionController.puml
 !include .\\Players\PlayerMover.puml
+!include .\\UIs\PlayerCameraController.puml
+!include .\\UIs\UIEatenView.puml
 !include .\\UIs\UISizeManager.puml
 !include .\\UIs\UITimerControl.puml
 !include .\\UIs\UI_TimeManager.puml
+!include .\\UIs\VCamFollow.puml
 @enduml
