@@ -10,7 +10,7 @@ public static class Player
     /// <summary>
     /// シーンビュー上で最も大きいプレイヤーのTransを返す。
     /// </summary>
-    public static Transform BiggestPlayer
+    public static Transform Biggest
     {
         get
         {
@@ -25,6 +25,13 @@ public static class Player
     /// </summary>
     /// <param name="gameObject"></param>
     /// <returns></returns>
-    public static bool IsMainPlayer(GameObject gameObject) => BiggestPlayer == gameObject;
+    public static bool IsMainPlayer(GameObject gameObject) => Biggest == gameObject;
     public static int Count() => GameObject.FindGameObjectsWithTag("Player").Length;
+    public static float BiggestSize
+    {
+        get
+        {
+            return Biggest.localScale.x >= Biggest.localScale.y ? Biggest.localScale.x : Biggest.localScale.y;
+        }
+    }
 }

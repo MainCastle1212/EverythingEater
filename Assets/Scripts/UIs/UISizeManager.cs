@@ -28,7 +28,7 @@ public class UISizeManager : MonoBehaviour
     private void Awake()
     {
         GoalSize = gameDirector.GoalSize;
-        PlayerScale = Player.BiggestPlayer.localScale.x;
+        PlayerScale = Player.Biggest.localScale.x;
         GoalSizeT.text = $"{GoalSize}㍍";
 
         Ratio = (TargetUI.rect.width - PlayerUI.rect.width) / (GoalSize - PlayerScale);
@@ -37,11 +37,11 @@ public class UISizeManager : MonoBehaviour
     {
         BaffaPlayerSize = PlayerScale;
 
-        var diff = Player.BiggestPlayer.localScale.x - BaffaPlayerSize;
+        var diff = Player.Biggest.localScale.x - BaffaPlayerSize;
 
         if (PlayerUI.sizeDelta.x < MaxSize) PlayerUI.sizeDelta += new Vector2(Ratio * diff, Ratio * diff);
 
-        PlayerScale = Player.BiggestPlayer.localScale.x;
+        PlayerScale = Player.Biggest.localScale.x;
 
         var sizeAfterDecimal = GetAfterDecimalPoint(PlayerScale) * 10;
         Size.text = $"{Mathf.FloorToInt(PlayerScale)}㍍{sizeAfterDecimal:0}㌢";
@@ -56,17 +56,4 @@ public class UISizeManager : MonoBehaviour
     {
         return num % 1;
     }
-    /// <summary>
-    /// シーン内に存在するPlayerの中で最も大きいプレイヤーのTrasfromを返す
-    /// </summary>
-    //public Transform BiggestPlayer
-    //{
-    //    get
-    //    {
-    //        var players = new List<GameObject>();
-    //        players = GameObject.FindGameObjectsWithTag("Player").ToList();
-
-    //        return players.OrderByDescending(p => p.transform.localScale.x).First().transform;
-    //    }
-    //}
 }

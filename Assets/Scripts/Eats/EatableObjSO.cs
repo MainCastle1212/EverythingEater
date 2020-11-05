@@ -12,4 +12,5 @@ public class EatableObjSO : ScriptableObject
     /// 自身のスプライト
     /// </summary>
     public Sprite m_Sprite;
+
 }

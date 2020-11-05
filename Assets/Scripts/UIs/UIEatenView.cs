@@ -19,6 +19,8 @@ public class UIEatenView : MonoBehaviour
 
     public void View(EatableObjSO objSO)
     {
+        if (objSO == null) return;
+
         image.color = DefaultColor;
 
         image.sprite = objSO.m_Sprite;
