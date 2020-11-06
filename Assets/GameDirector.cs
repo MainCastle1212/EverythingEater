@@ -33,7 +33,7 @@ public class GameDirector : MonoBehaviour
     {
         FinishUI.SetActive(true);
 
-        //Time.timeScale = 0;
+        //  Time.timeScale = 0;
         var finishUITrans = FinishUI.transform;
         var transCashe = finishUITrans.localScale;
 
