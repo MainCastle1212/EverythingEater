@@ -19,10 +19,10 @@ public class GameDirector : MonoBehaviour
     Ease ease;
     public float GoalSize;
 
-
     private void Start()
     {
         FinishUI.SetActive(false);
+        Screen.SetResolution(1024, 576, false, 60);
     }
     private void Update()
     {
