@@ -59,7 +59,6 @@ public class TitleSceneManager : MonoBehaviour
         {
             var removeStr = StartTextStr.Remove(i);
             StartText.text = removeStr;
-            Debug.Log(removeStr);
 
             yield return new WaitForSeconds(CharEatWaitTime);
         }

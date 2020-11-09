@@ -984,7 +984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FadeTime: 1
-  CharEatWaitTime: 0.3
+  CharEatWaitTime: 0.15
   StartText: {fileID: 1533037471}
   EatPlayer: {fileID: 1309225006}
   MoveDistance: 0.45

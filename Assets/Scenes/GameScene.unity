@@ -304,7 +304,7 @@ MonoBehaviour:
   Timer: {fileID: 11400000, guid: 73a30b382ab15ea42a56b5c575f01725, type: 2}
   Time: {fileID: 716664692}
   FinishUI: {fileID: 1347824680}
-  time: 1.8
+  time: 1.5
   ease: 27
 --- !u!114 &130281016
 MonoBehaviour:
@@ -4521,11 +4521,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Items
-      objectReference: {fileID: 0}
-    - target: {fileID: 5475629190928038879, guid: 14752fc1621029e43a4f38323c17b85a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14752fc1621029e43a4f38323c17b85a, type: 3}

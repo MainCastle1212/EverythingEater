@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
+    [SerializeField]
+    Timer timer;
     public void OnRetry()
     {
+        timer.Reset();
         SceneManager.LoadScene("GameScene");
     }
     public void OnQuit()
