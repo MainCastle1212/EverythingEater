@@ -20,6 +20,5 @@ public class GameOverSceneManager : MonoBehaviour
         var AfterTheDecimalPoint = (Player.Size - integer) * 100;
         FinishSizeText.text = $"あなたのさいず:{integer}㍍ {AfterTheDecimalPoint:00}㌢";
         GoalSize.text = $"もくひょうのおおきさ：{GameDirector.Instance.GoalSize}㍍";
-        Debug.Log(AfterTheDecimalPoint);
     }
 }

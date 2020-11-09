@@ -4437,6 +4437,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 773891807342185911, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
+        type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 11400000, guid: 73a30b382ab15ea42a56b5c575f01725,
+        type: 2}
     - target: {fileID: 773891808620647011, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
         type: 3}
       propertyPath: UIEaten
@@ -4600,6 +4606,12 @@ PrefabInstance:
       propertyPath: gameSetting
       value: 
       objectReference: {fileID: 11400000, guid: e0b4d8a1d255e99488a7a2f2fb28b35b,
+        type: 2}
+    - target: {fileID: 5671449828272066679, guid: f74802e87d5110a418fe4d3d1e768def,
+        type: 3}
+      propertyPath: timer
+      value: 
+      objectReference: {fileID: 11400000, guid: 73a30b382ab15ea42a56b5c575f01725,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74802e87d5110a418fe4d3d1e768def, type: 3}
