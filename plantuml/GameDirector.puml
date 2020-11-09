@@ -1,0 +1,12 @@
+@startuml
+class GameDirector {
+    + GoalSize : float <<get>>
+    + Awake() : void
+    + DestroySelf() : void
+}
+MonoBehaviour <|-- GameDirector
+GameDirector --> "gameSetting" GameSetting
+GameDirector --> "timer" Timer
+GameDirector --> "instance" GameDirector
+GameDirector --> "Instance" GameDirector
+@enduml

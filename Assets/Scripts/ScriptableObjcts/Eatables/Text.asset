@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e57f50411137d134b874c491782250ca, type: 3}
-  m_Name: Player
+  m_Name: Text
   m_EditorClassIdentifier: 
-  Name: "\u30EF\u30BF\u30B7"
-  m_Sprite: {fileID: 21300000, guid: fa8d6b1b5fad7fa448309d033de2fcd9, type: 3}
-  InitSize: 1
+  Name: "\u30C6\u30AD\u30B9\u30C8"
+  m_Sprite: {fileID: 21300000, guid: 0c7c93365da94fc47867bd031a019980, type: 3}
+  InitSize: 0
+  isPlayer: 0

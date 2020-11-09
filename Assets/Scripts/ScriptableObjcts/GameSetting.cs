@@ -4,11 +4,11 @@ using UnityEngine;
 [CreateAssetMenu]
 public class GameSetting : ScriptableObject
 {
-    [Header("面の名前")]
+    [Header("Level Name")]
     [SerializeField]
     string Name;
-    [Header("目標サイズ")]
+    [Header("Target Size")]
     public float GaolSize;
-    [Header("制限時間")]
+    [Header("Time Limit")]
     public int Time;
 }

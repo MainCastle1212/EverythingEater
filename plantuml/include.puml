@@ -1,21 +1,29 @@
 @startuml
-!include .\\CollisionDetector.puml
-!include .\\Timer.puml
-!include .\\TimerEvent.puml
+!include .\\GameDirector.puml
+!include .\\testSize.puml
 !include .\\Eats\Eat.puml
 !include .\\Eats\EatableObjContoroller.puml
-!include .\\Eats\EatableObjSO.puml
-!include .\\Eats\EatController.puml
 !include .\\Eats\IEatable.puml
 !include .\\Players\AbsorbController.puml
 !include .\\Players\DivideController.puml
 !include .\\Players\Player.puml
-!include .\\Players\PlayerCollisionController.puml
+!include .\\Players\PlayerController.puml
 !include .\\Players\PlayerMover.puml
+!include .\\ScriptableObjcts\EatableObjSO.puml
+!include .\\ScriptableObjcts\GameSetting.puml
+!include .\\ScriptableObjcts\Timer.puml
+!include .\\UIs\Buttons.puml
+!include .\\UIs\GameOverSceneManager.puml
+!include .\\UIs\GameOverSceneUnload.puml
 !include .\\UIs\PlayerCameraController.puml
+!include .\\UIs\TimerEvent.puml
+!include .\\UIs\TitleSceneManager.puml
 !include .\\UIs\UIEatenView.puml
 !include .\\UIs\UISizeManager.puml
 !include .\\UIs\UITimerControl.puml
 !include .\\UIs\UI_TimeManager.puml
 !include .\\UIs\VCamFollow.puml
+!include .\\Unused\CollisionDetector.puml
+!include .\\Unused\EatController.puml
+!include .\\Unused\PlayerCollisionController.puml
 @enduml

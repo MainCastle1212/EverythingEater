@@ -14,5 +14,4 @@ UISizeManager --> "PlayerUI" RectTransform
 UISizeManager --> "TargetUI" RectTransform
 UISizeManager --> "Size" Text
 UISizeManager --> "GoalSizeT" Text
-UISizeManager --> "gameDirector" GameDirector
 @enduml

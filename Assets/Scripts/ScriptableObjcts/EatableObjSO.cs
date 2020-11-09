@@ -13,6 +13,7 @@ public class EatableObjSO : ScriptableObject
     /// </summary>
     public Sprite m_Sprite;
     public float InitSize;
+    public bool isPlayer = false;
     public float Size { get; set; }
 
     private void OnEnable()

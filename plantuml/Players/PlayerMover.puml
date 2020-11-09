@@ -7,6 +7,7 @@ class PlayerMover {
     Update() : void
 }
 MonoBehaviour <|-- PlayerMover
+PlayerMover --> "timer" Timer
 PlayerMover --> "Trans" Transform
 PlayerMover --> "rd" Rigidbody2D
 PlayerMover --> "playerPos" Vector3

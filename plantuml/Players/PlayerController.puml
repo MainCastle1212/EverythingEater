@@ -1,0 +1,7 @@
+@startuml
+class PlayerController {
+    Update() : void
+}
+MonoBehaviour <|-- PlayerController
+PlayerController --> "PlayerSO" EatableObjSO
+@enduml

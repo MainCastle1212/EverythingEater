@@ -2,6 +2,7 @@
 class Player <<static>> {
     + {static} IsMainPlayer(gameObject:GameObject) : bool
     + {static} Count() : int
+    + {static} BiggestSize : float <<get>>
 }
-Player --> "BiggestPlayer" Transform
+Player --> "Biggest" Transform
 @enduml

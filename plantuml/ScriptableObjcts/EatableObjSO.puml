@@ -1,0 +1,11 @@
+@startuml
+class EatableObjSO {
+    + Name : string
+    + InitSize : float
+    + Size : float <<get>> <<set>>
+    - OnEnable() : void
+    + Init() : void
+}
+ScriptableObject <|-- EatableObjSO
+EatableObjSO --> "m_Sprite" Sprite
+@enduml
