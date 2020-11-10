@@ -205,7 +205,7 @@ PrefabInstance:
     - target: {fileID: 5310443817217592965, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5310443817217592970, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
@@ -337,6 +337,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EatableText (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8095662397895675127, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: UIEaten
+      value: 
+      objectReference: {fileID: 130281019}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f795c836053f7c44eba56079bdd561f5, type: 3}
 --- !u!224 &93060829 stripped
@@ -2868,7 +2873,7 @@ PrefabInstance:
     - target: {fileID: 5310443817217592965, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5310443817217592970, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
@@ -3000,6 +3005,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EatableText (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8095662397895675127, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: UIEaten
+      value: 
+      objectReference: {fileID: 130281019}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f795c836053f7c44eba56079bdd561f5, type: 3}
 --- !u!224 &1103696777 stripped
@@ -3018,7 +3028,7 @@ PrefabInstance:
     - target: {fileID: 5310443817217592965, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5310443817217592970, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
@@ -3140,6 +3150,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EatableText (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8095662397895675127, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: UIEaten
+      value: 
+      objectReference: {fileID: 130281019}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f795c836053f7c44eba56079bdd561f5, type: 3}
 --- !u!224 &1140297446 stripped
@@ -4294,7 +4309,7 @@ PrefabInstance:
     - target: {fileID: 5310443817217592965, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5310443817217592970, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
@@ -4426,6 +4441,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EatableText (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8095662397895675127, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: UIEaten
+      value: 
+      objectReference: {fileID: 130281019}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f795c836053f7c44eba56079bdd561f5, type: 3}
 --- !u!224 &1659816627 stripped
@@ -4444,7 +4464,7 @@ PrefabInstance:
     - target: {fileID: 5310443817217592965, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5310443817217592970, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
@@ -4576,6 +4596,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EatableText (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8095662397895675127, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: UIEaten
+      value: 
+      objectReference: {fileID: 130281019}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f795c836053f7c44eba56079bdd561f5, type: 3}
 --- !u!224 &1708201204 stripped
@@ -4890,7 +4915,7 @@ PrefabInstance:
     - target: {fileID: 5310443817217592965, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5310443817217592970, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
@@ -5022,6 +5047,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EatableText (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8095662397895675127, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: UIEaten
+      value: 
+      objectReference: {fileID: 130281019}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f795c836053f7c44eba56079bdd561f5, type: 3}
 --- !u!224 &1934847751 stripped
@@ -5292,7 +5322,7 @@ PrefabInstance:
     - target: {fileID: 5310443817217592965, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5310443817217592970, guid: f795c836053f7c44eba56079bdd561f5,
         type: 3}
@@ -5409,6 +5439,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EatableText
       objectReference: {fileID: 0}
+    - target: {fileID: 8095662397895675127, guid: f795c836053f7c44eba56079bdd561f5,
+        type: 3}
+      propertyPath: UIEaten
+      value: 
+      objectReference: {fileID: 130281019}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f795c836053f7c44eba56079bdd561f5, type: 3}
 --- !u!1001 &5475629190231689743

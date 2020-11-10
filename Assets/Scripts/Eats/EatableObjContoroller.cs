@@ -21,6 +21,10 @@ public class EatableObjContoroller : MonoBehaviour, IEatable
 
     private void OnDestroy()
     {
+        DestroyGameObjected();
+    }
+    protected virtual void DestroyGameObjected()
+    {
         UIEaten.View(objSO);
     }
 }
