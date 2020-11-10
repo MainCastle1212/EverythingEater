@@ -1,6 +1,5 @@
 @startuml
 class UITimerControl {
-    - Start() : void
     ClockTimer() : IEnumerator
 }
 MonoBehaviour <|-- UITimerControl

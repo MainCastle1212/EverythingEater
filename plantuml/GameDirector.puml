@@ -7,6 +7,5 @@ class GameDirector {
 MonoBehaviour <|-- GameDirector
 GameDirector --> "gameSetting" GameSetting
 GameDirector --> "timer" Timer
-GameDirector --> "instance" GameDirector
 GameDirector --> "Instance" GameDirector
 @enduml

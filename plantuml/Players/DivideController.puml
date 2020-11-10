@@ -8,5 +8,4 @@ class DivideController {
     + Divide() : void
 }
 MonoBehaviour <|-- DivideController
-DivideController --> "m_Trans" Transform
 @enduml

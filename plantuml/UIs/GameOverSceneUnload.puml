@@ -1,6 +1,5 @@
 @startuml
 class GameOverSceneUnload {
-    - OnDestroy() : void
 }
 MonoBehaviour <|-- GameOverSceneUnload
 @enduml

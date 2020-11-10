@@ -1,6 +1,5 @@
 @startuml
 class UIEatenView {
-    - Awake() : void
     + View(objSO:EatableObjSO) : void
 }
 MonoBehaviour <|-- UIEatenView

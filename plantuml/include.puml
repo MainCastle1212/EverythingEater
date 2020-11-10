@@ -1,7 +1,7 @@
 @startuml
 !include .\\GameDirector.puml
-!include .\\testSize.puml
 !include .\\Eats\Eat.puml
+!include .\\Eats\EatableChar.puml
 !include .\\Eats\EatableObjContoroller.puml
 !include .\\Eats\IEatable.puml
 !include .\\Players\AbsorbController.puml
@@ -16,6 +16,7 @@
 !include .\\UIs\GameOverSceneManager.puml
 !include .\\UIs\GameOverSceneUnload.puml
 !include .\\UIs\PlayerCameraController.puml
+!include .\\UIs\testSize.puml
 !include .\\UIs\TimerEvent.puml
 !include .\\UIs\TitleSceneManager.puml
 !include .\\UIs\UIEatenView.puml

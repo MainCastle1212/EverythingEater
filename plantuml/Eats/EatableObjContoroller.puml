@@ -1,12 +1,9 @@
 @startuml
 class EatableObjContoroller {
-    Start() : void
-    + ObjSize : float <<get>>
-    - OnDestroy() : void
+    + <<virtual>> ObjSize : float <<get>>
 }
 MonoBehaviour <|-- EatableObjContoroller
 IEatable <|-- EatableObjContoroller
 EatableObjContoroller --> "objSO" EatableObjSO
 EatableObjContoroller --> "UIEaten" UIEatenView
-EatableObjContoroller --> "m_Renderer" Renderer
 @enduml
