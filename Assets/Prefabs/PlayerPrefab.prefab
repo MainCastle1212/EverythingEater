@@ -638,3 +638,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerSO: {fileID: 11400000, guid: 6c09c9174f074454ca99ac71b1c5be47, type: 2}
+  targetGroup: {fileID: 0}
+  DistancePlayerScale: 3
+  Distance: 3

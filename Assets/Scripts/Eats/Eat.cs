@@ -28,19 +28,21 @@ public class Eat : MonoBehaviour
     {
         TryEat(collision);
     }
+    /// <summary>
+    /// 当たったオブジェクトを食べようとするメソッド
+    /// </summary>
+    /// <param name="collision"></param>
     public void TryEat(Collision2D collision)
     {
         var hitObj = collision.gameObject.GetComponent<IEatable>();
-        if (m_Size < hitObj.ObjSize || hitObj == null) return;
-
-        // collision.gameObject.SetActive(false);
+        if (hitObj == null) return;
+        if (m_Size < hitObj.ObjSize) return;
 
         var hitObjSize = hitObj.ObjSize;
 
         var playerScale = m_Trans.localScale;
         playerScale += Vector3.one * (hitObjSize / Ratio);
 
-        //m_Trans.localScale = playerScale;
         m_Trans.DOScale(playerScale, Time).SetEase(ease);
 
         Destroy(collision.gameObject);
