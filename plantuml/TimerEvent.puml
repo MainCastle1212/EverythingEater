@@ -1,4 +1,5 @@
 @startuml
+namespace Timer{
 class TimerEvent {
     isInvoked : bool = false
     Update() : void
@@ -6,4 +7,15 @@ class TimerEvent {
 MonoBehaviour <|-- TimerEvent
 TimerEvent o-> "OnTimeOver" UnityEvent
 TimerEvent --> "timer" Timer
+class Timer {
+    + StartTime : int <<get>>
+    + Time : float <<get>>
+    + IsTimeOver : bool <<get>>
+    OnEnable() : void
+    + Update() : void
+    + Reset() : void
+}
+ScriptableObject <|-- Timer
+Timer --> "gameSetting" GameSetting
+}
 @enduml

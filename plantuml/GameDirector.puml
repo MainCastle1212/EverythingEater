@@ -1,4 +1,5 @@
 @startuml
+namespace Director{
 class GameDirector {
     + GoalSize : float <<get>>
     + Awake() : void
@@ -8,4 +9,6 @@ MonoBehaviour <|-- GameDirector
 GameDirector --> "gameSetting" GameSetting
 GameDirector --> "timer" Timer
 GameDirector --> "Instance" GameDirector
+note left of GameDirector : シングルトンパターン
+}
 @enduml

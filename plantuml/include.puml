@@ -24,7 +24,4 @@
 !include .\\UIs\UITimerControl.puml
 !include .\\UIs\UI_TimeManager.puml
 !include .\\UIs\VCamFollow.puml
-!include .\\Unused\CollisionDetector.puml
-!include .\\Unused\EatController.puml
-!include .\\Unused\PlayerCollisionController.puml
 @enduml
