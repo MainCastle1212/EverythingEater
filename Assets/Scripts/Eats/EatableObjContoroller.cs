@@ -10,16 +10,20 @@ public class EatableObjContoroller : MonoBehaviour, IEatable
     UIEatenView UIEaten;
 
     private Renderer m_Renderer;
-    void Start()
+    protected virtual void Start()
     {
         m_Renderer = GetComponent<Renderer>();
     }
     /// <summary>
     /// 自分自身のサイズのプロパティ
     /// </summary>
-    public float ObjSize => m_Renderer.bounds.size.x * m_Renderer.bounds.size.y;
+    public virtual float ObjSize => m_Renderer.bounds.size.x * m_Renderer.bounds.size.y;
 
     private void OnDestroy()
+    {
+        DestroyedGameObject();
+    }
+    protected virtual void DestroyedGameObject()
     {
         UIEaten.View(objSO);
     }

@@ -33,7 +33,7 @@ public class Eat : MonoBehaviour
         var hitObj = collision.gameObject.GetComponent<IEatable>();
         if (m_Size < hitObj.ObjSize || hitObj == null) return;
 
-        collision.gameObject.SetActive(false);
+        // collision.gameObject.SetActive(false);
 
         var hitObjSize = hitObj.ObjSize;
 
