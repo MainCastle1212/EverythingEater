@@ -34387,7 +34387,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1164584776, guid: 127facb7e41f74f4f92705dbcd7ecfb7, type: 3}
       propertyPath: Ratio
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1164584777, guid: 127facb7e41f74f4f92705dbcd7ecfb7, type: 3}
       propertyPath: vCam
@@ -34474,6 +34474,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 73a30b382ab15ea42a56b5c575f01725,
         type: 2}
+    - target: {fileID: 773891807342185911, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
+        type: 3}
+      propertyPath: Speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 773891808620647011, guid: 127facb7e41f74f4f92705dbcd7ecfb7,
         type: 3}
       propertyPath: UIEaten
